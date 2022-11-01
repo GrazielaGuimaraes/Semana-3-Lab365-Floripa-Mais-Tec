@@ -29,10 +29,18 @@ if(hora > 23 && hora < 6){
 
 function calcular() {
 
-    let soma = Number(document.getElementById('n1').value) +  Number(document.getElementById('n2').value )
-    document.getElementById('resultadoCalculadora').textContent =  soma
-}
+    if(document.getElementById('n1').value == '' || document.getElementById('n2').value == '' || isNaN(document.getElementById('n1').value) || isNaN(document.getElementById('n2').value)) {
 
+        alert('Insira os valores corretamente!')
+
+    } else {
+
+        let soma = Number(document.getElementById('n1').value) +  Number(document.getElementById('n2').value )
+        document.getElementById('resultadoCalculadora').textContent =  soma
+    }
+
+   
+}
 
 
 /************** ATIVIDADE 2 SEMANA#3 ******************/
