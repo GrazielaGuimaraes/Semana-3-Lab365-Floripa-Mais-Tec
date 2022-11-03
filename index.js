@@ -19,10 +19,15 @@ if(hora > 23 && hora < 6){
     document.getElementById('hora').textContent = 'Bom dia! Hora atualizada: ' + hora + ':' + datas.getMinutes()
 
 //12:00 até 23:59
-} else if(hora >= 12 && hora < 24){
-    console.log('Boa noite! São: ' + hora + ':' + datas.getMinutes())
+} else if(hora >= 12 && hora < 18){
+    console.log('Boa tarde! São: ' + hora + ':' + datas.getMinutes())
+    document.getElementById('hora').textContent = 'Boa tarde! São: ' + hora + ':' + datas.getMinutes()
+}  
+    else {
+        
+      console.log('Boa noite! São: ' + hora + ':' + datas.getMinutes())
     document.getElementById('hora').textContent = 'Boa noite! São: ' + hora + ':' + datas.getMinutes()
-}
+    }
 
 }
 
