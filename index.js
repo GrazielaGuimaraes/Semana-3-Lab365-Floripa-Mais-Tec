@@ -18,11 +18,12 @@ if(hora > 23 && hora < 6){
     console.log('Bom dia! Hora atualizada: ' + hora + ':' + datas.getMinutes())
     document.getElementById('hora').textContent = 'Bom dia! Hora atualizada: ' + hora + ':' + datas.getMinutes()
 
-//12:00 até 23:59
+//12:00 até 17:59
 } else if(hora >= 12 && hora < 18){
     console.log('Boa tarde! São: ' + hora + ':' + datas.getMinutes())
     document.getElementById('hora').textContent = 'Boa tarde! São: ' + hora + ':' + datas.getMinutes()
 }  
+    //18:00 até 23:00
     else {
         
       console.log('Boa noite! São: ' + hora + ':' + datas.getMinutes())
